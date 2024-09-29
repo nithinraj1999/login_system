@@ -1,0 +1,37 @@
+<%-include('header')-%>
+<section>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Products</a>
+          <form class="d-flex" role="search" action="/logout" method="post">
+            <button class="btn btn-outline-success" type="submit">Logout</button>
+          </form>
+        </div>
+      </nav> 
+</section>
+<section>
+  <div class="container mt-4">
+ 
+    <div class="row ms-5 card-text mb-5" >
+    <% products.forEach(function(products) { %>
+       
+        <div class="col-md-3 me-5 gx-5 gy-5 mt-4  " >
+        
+        <div class="card    shadow-lg  " style="width: 18rem; border-radius: 40px; ">
+            <img class="card-img-top mt-2 ms-3" src="<%= products.src %>" alt="Card image cap" style="height: 18em; width: 90%; object-fit: contain;">
+            <div class="card-body text-center bg-body-tertiary" style="height: 12em;">
+                <h5 class="pt-4 card-title  fw-bold"><%= products.name %></h5>
+           
+                <a href="#" class="btn justify-content-center  btn-dark shadow-lg  btn-card rounded-pill ">Buy Now</a>
+                
+                
+            </div>
+        </div>
+    </div>
+    <% }); %>
+</div>
+</div>
+</section>
+
+</div>
+<%-include('footer')-%>

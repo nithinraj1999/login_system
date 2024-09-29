@@ -1,0 +1,35 @@
+#login {
+  
+  margin-top:133px;
+  
+  
+}
+
+
+.login-box{
+    background-color: rgb(30, 27, 27);
+    border-radius: 25px;
+    height: 500px;
+
+}
+
+body{
+    background-color: rgb(227, 25, 106);
+    color: brown;
+    display: grid;
+}
+#input1{
+   margin-top:20px;
+}
+
+#input2{
+    
+    margin-top:20px;
+}
+#btn{
+    width: 100px;
+    margin-top:20px;
+}
+#loginb{
+    background-color: black;
+}
